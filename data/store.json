@@ -1,1 +1,43 @@
-
+{
+  "users": [
+    {
+      "usernameKey": "admin",
+      "usernameDisplay": "Admin",
+      "salt": "6d720fb8dfb3a18e148776146044b8ae",
+      "passwordHash": "74bf61b8182c3305ea2de1a422b1b7a6ab1ffab48a67bbd1022d73d743b95945953ada7b007a4881efcc6e3c513ade037e0d1ce03ea4ce60048140430496ded9",
+      "isAdmin": true,
+      "createdAt": "2026-04-25T16:18:46.956Z"
+    }
+  ],
+  "predictions": {
+    "admin": {
+      "submitted": false,
+      "results": {},
+      "submittedAt": null
+    }
+  },
+  "globalBracket": {
+    "entryAssignments": {
+      "omega2": null,
+      "alpha3": null,
+      "alpha2": null,
+      "omega3": null,
+      "alpha1": null,
+      "omega1": null,
+      "omega4": null,
+      "alpha4": null
+    },
+    "publishedAt": null,
+    "publishedBy": null
+  },
+  "settings": {
+    "predictionWindowOpen": true,
+    "predictionClosedAt": null,
+    "predictionClosedBy": null
+  },
+  "actualResults": {
+    "results": {},
+    "updatedAt": null,
+    "updatedBy": null
+  }
+}

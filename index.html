@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VCT 플레이오프 대진표</title>
+    <link rel="stylesheet" href="./styles.css?v=bracket-app-2" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-mark">VCT PACIFIC</div>
+        <div class="hero-copy">
+          <p class="hero-kicker">2026 VCT Pacific Stage 1</p>
+          <h1>플레이오프 대진표</h1>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <div class="toolbar-copy">
+          <strong id="statusText">왼쪽 빈 칸을 눌러 팀을 배치하세요.</strong>
+          <span id="subStatusText">로그인 후 기능을 사용할 수 있습니다.</span>
+        </div>
+        <div id="topControls" class="toolbar-actions"></div>
+      </section>
+
+      <div id="flashMessage" class="flash hidden"></div>
+
+      <section id="rankingPanel" class="ranking-panel hidden"></section>
+
+      <main class="board">
+        <div class="board-head">1라운드</div>
+        <div class="board-head">2라운드</div>
+        <div class="board-head">준결승</div>
+        <div class="board-head">결승 진출전</div>
+        <div class="board-head">결승전</div>
+
+        <div class="board-band upper">상위조 대진표</div>
+
+        <div class="cell m1"><div id="match-m1" class="match"></div></div>
+        <div class="cell m3"><div id="match-m3" class="match"></div></div>
+        <div class="cell m9"><div id="match-m9" class="match compact"></div></div>
+        <div class="cell bridge">→</div>
+        <div class="cell gf"><div id="match-gf" class="match compact"></div></div>
+
+        <div class="cell m2"><div id="match-m2" class="match"></div></div>
+        <div class="cell m4"><div id="match-m4" class="match"></div></div>
+
+        <div class="board-band lower">하위조 대진표</div>
+
+        <div class="cell m5"><div id="match-m5" class="match"></div></div>
+        <div class="cell m7"><div id="match-m7" class="match"></div></div>
+        <div class="cell spacer"></div>
+        <div class="cell spacer"></div>
+        <div class="cell spacer"></div>
+
+        <div class="cell m6"><div id="match-m6" class="match"></div></div>
+        <div class="cell m8"><div id="match-m8" class="match"></div></div>
+        <div class="cell m10"><div id="match-m10" class="match compact"></div></div>
+        <div class="cell m11"><div id="match-m11" class="match compact"></div></div>
+      </main>
+    </div>
+
+    <div id="pickerModal" class="modal hidden">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel">
+        <div class="modal-header">
+          <h2>팀 선택</h2>
+          <button id="closePickerButton" class="icon-button" type="button">×</button>
+        </div>
+        <p id="pickerLabel" class="picker-label"></p>
+        <div id="pickerList" class="picker-list"></div>
+      </div>
+    </div>
+
+    <script src="./app.js?v=bracket-app-2"></script>
+  </body>
+</html>
